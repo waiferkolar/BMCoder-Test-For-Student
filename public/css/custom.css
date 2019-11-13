@@ -1,0 +1,17 @@
+*{
+  font-family: Cambria;
+}
+
+.my_toggle_menu{
+  cursor: pointer;
+}
+.my_sidebar{
+  width:250px;
+  position: absolute;
+  left:-250px;
+  transition: 1s;
+}
+.my_sidebar_show{
+  left:0px;
+}
+
