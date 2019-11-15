@@ -4,16 +4,16 @@
             <a href="{{url("admin/user/all")}}">User Management</a>
         </li>
         <li class="list-group-item rounded-0">
-            <a href="#">Category Management</a>
+            <a href="{{url("admin/cat/all")}}">Category Management</a>
         </li>
         <li class="list-group-item rounded-0">
-            <a href="#">Tutorial Management</a>
+            <a href="{{url("admin/tut/all")}}">Tutorial Management</a>
         </li>
         <li class="list-group-item rounded-0">
-            <a href="#">Q&A Management</a>
+            <a href="{{url("admin/role/all")}}">Role Management</a>
         </li>
         <li class="list-group-item rounded-0">
-            <a href="#">Certificate Management</a>
+            <a href="{{url("admin/permission/all")}}">Permission Management</a>
         </li>
         <li class="list-group-item rounded-0">
             <a href="#">Unknow Management</a>

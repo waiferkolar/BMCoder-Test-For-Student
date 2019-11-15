@@ -15,7 +15,7 @@
                 <th scope="col">Email</th>
                 <th scope="col">Role</th>
                 <th scope="col">Create</th>
-                <th scope="col">Permission</th>
+                <th scope="col">Role/Permit</th>
                 <th scope="col">Action</th>
             </tr>
             </thead>
@@ -33,8 +33,12 @@
                         @endif
                     </td>
                     <td>{{$user->created_at->toFormattedDateString()}}</td>
-                    <td><a href="{{url("admin/role/$user->id/add")}}" class="btn btn-success btn-sm">Permission
-                            <i class="fa fa-plus"></i></a></td>
+                    <td>
+                        <a href="{{url("admin/permission/$user->id/add")}}" class="btn btn-secondary btn-sm">Permission
+                            <i class="fa fa-plus"></i></a>
+                        <a href="{{url("admin/role/$user->id/add")}}" class="btn btn-info btn-sm">Role
+                            <i class="fa fa-plus"></i></a>
+                    </td>
                     <td>
                         <a href="{{url("admin/user/$user->id/edit")}}" class="btn btn-warning btn-sm">Edit</a>
                         @if($user->deleted_at == null)

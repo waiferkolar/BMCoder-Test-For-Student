@@ -10,6 +10,7 @@
   position: absolute;
   left:-250px;
   transition: 1s;
+  z-index: 1000;
 }
 .my_sidebar_show{
   left:0px;

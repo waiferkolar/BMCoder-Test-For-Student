@@ -5,11 +5,11 @@
 @section('content')
 
     <div class="container my-5">
-        <h1 class="text-info text-center mb-3">Add Permission For {{ucfirst($user->name)}}</h1>
+        <h1 class="text-info text-center mb-3">Add Role For {{ucfirst($user->name)}}</h1>
 
         <div class="row">
             <div class="col-md-4 offset-md-1">
-                <h3 class="text-center text-muted">Available Permissions</h3>
+                <h3 class="text-center text-muted">Available Roles</h3>
                 <ul class="list-group">
                     @foreach($roles as $role)
                         @if(!$user->hasRole($role->name))

@@ -1,5 +1,6 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -13,8 +14,11 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::create(['name' => 'category delete']);
 
 
-        Role::create(['name' => 'admin']);
+        $role = Role::create(['name' => 'admin']);
         Role::create(['name' => 'manager']);
         Role::create(['name' => 'user']);
+
+        $user = User::whereId(1)->first();
+        $user->assignRole($role);
     }
 }
